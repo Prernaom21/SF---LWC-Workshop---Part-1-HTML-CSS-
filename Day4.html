@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Canvas and datalist</title>
+    </head>
+    <body>       
+                <h2>CANVAS Tag</h2>
+        <canvas id="canvasid" width="600" height="300" style="border:10px solid;color:blue;background:red">
+ 	Canvas is not displayed here.
+        </canvas>
+        <script>
+            var cvar = document.getElementById("canvasid");
+            var cvarContext = cvar.getContext("2d");
+            //cvarContext.addcolor("#3FFF33");
+            cvarContext.fillStyle = "green";    
+            //cvarContext.fillstyle="#3FFF33";
+            cvarContext.fillRect(150,100,300,100);
+        </script>
+
+<h1>DataList and Colors style</h1>
+        <label for="browser">Choose your Programming languange known from the list:</label>
+  <input list="Datalists" name="datalis" id="datalis">
+  <datalist id="Datalists">
+    <option value="C">
+    <option value="C++">
+    <option value="Javascript">
+    <option value="Java">
+  </datalist>
+   
+    </body>
+</html>
